@@ -1,0 +1,218 @@
+[
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png",
+    "title": "Facebook",
+    "companyName": "Meta Platforms, Inc.",
+    "id": 1,
+    "description": "Connect with friends, family, and communities worldwide. Share photos, videos, and moments that matter most. Stay updated with the latest news and trends.",
+    "size": 180,
+    "reviews": 25000000,
+    "ratingAvg": 4.3,
+    "downloads": 5000000000,
+    "ratings": [
+      { "name": "1 star", "count": 200000 },
+      { "name": "2 star", "count": 300000 },
+      { "name": "3 star", "count": 800000 },
+      { "name": "4 star", "count": 2000000 },
+      { "name": "5 star", "count": 21700000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png",
+    "title": "Instagram",
+    "companyName": "Meta Platforms, Inc.",
+    "id": 2,
+    "description": "A photo and video sharing platform loved by millions. Explore stories, reels, and creative content from around the world. Stay connected with your favorite creators and friends.",
+    "size": 150,
+    "reviews": 21000000,
+    "ratingAvg": 4.4,
+    "downloads": 4000000000,
+    "ratings": [
+      { "name": "1 star", "count": 250000 },
+      { "name": "2 star", "count": 350000 },
+      { "name": "3 star", "count": 700000 },
+      { "name": "4 star", "count": 1800000 },
+      { "name": "5 star", "count": 17700000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg",
+    "title": "Netflix",
+    "companyName": "Netflix, Inc.",
+    "id": 3,
+    "description": "Stream your favorite TV shows, movies, and exclusive series anytime. Enjoy content across genres from thrillers to comedies. Download and watch offline wherever you go.",
+    "size": 200,
+    "reviews": 18000000,
+    "ratingAvg": 4.5,
+    "downloads": 1000000000,
+    "ratings": [
+      { "name": "1 star", "count": 120000 },
+      { "name": "2 star", "count": 200000 },
+      { "name": "3 star", "count": 500000 },
+      { "name": "4 star", "count": 1600000 },
+      { "name": "5 star", "count": 15700000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Uber_logo_2018.png",
+    "title": "Uber",
+    "companyName": "Uber Technologies, Inc.",
+    "id": 4,
+    "description": "Book rides in minutes and travel with ease. Whether commuting or exploring, Uber makes transportation convenient and affordable. Choose from cars, bikes, or shared rides.",
+    "size": 130,
+    "reviews": 9500000,
+    "ratingAvg": 4.6,
+    "downloads": 1000000000,
+    "ratings": [
+      { "name": "1 star", "count": 80000 },
+      { "name": "2 star", "count": 100000 },
+      { "name": "3 star", "count": 200000 },
+      { "name": "4 star", "count": 700000 },
+      { "name": "5 star", "count": 8420000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/58/Twitter_logo_2023.svg",
+    "title": "X (Twitter)",
+    "companyName": "X Corp (formerly Twitter)",
+    "id": 5,
+    "description": "Join real-time conversations and explore what’s happening now. Share your thoughts, photos, and videos instantly. Follow people and topics that inspire you.",
+    "size": 140,
+    "reviews": 13000000,
+    "ratingAvg": 4.1,
+    "downloads": 2000000000,
+    "ratings": [
+      { "name": "1 star", "count": 180000 },
+      { "name": "2 star", "count": 250000 },
+      { "name": "3 star", "count": 600000 },
+      { "name": "4 star", "count": 1500000 },
+      { "name": "5 star", "count": 10500000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Amazon_icon.png",
+    "title": "Amazon Shopping",
+    "companyName": "Amazon.com, Inc.",
+    "id": 6,
+    "description": "Shop millions of products from around the world. Enjoy fast delivery, exclusive deals, and secure payments. Track orders and manage returns easily from one app.",
+    "size": 160,
+    "reviews": 22000000,
+    "ratingAvg": 4.5,
+    "downloads": 1000000000,
+    "ratings": [
+      { "name": "1 star", "count": 150000 },
+      { "name": "2 star", "count": 250000 },
+      { "name": "3 star", "count": 600000 },
+      { "name": "4 star", "count": 1800000 },
+      { "name": "5 star", "count": 19300000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/3e/YouTube_full-color_icon_%282017%29.svg",
+    "title": "YouTube",
+    "companyName": "Google LLC",
+    "id": 7,
+    "description": "Watch, upload, and share videos from creators worldwide. Explore music, vlogs, education, and more. Subscribe to channels and get personalized recommendations.",
+    "size": 170,
+    "reviews": 30000000,
+    "ratingAvg": 4.6,
+    "downloads": 10000000000,
+    "ratings": [
+      { "name": "1 star", "count": 250000 },
+      { "name": "2 star", "count": 350000 },
+      { "name": "3 star", "count": 900000 },
+      { "name": "4 star", "count": 2500000 },
+      { "name": "5 star", "count": 26000000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/53/Spotify_logo_with_text.svg",
+    "title": "Spotify",
+    "companyName": "Spotify Technology S.A.",
+    "id": 8,
+    "description": "Stream millions of songs and podcasts for free. Discover new music tailored to your mood. Create playlists and share them with friends worldwide.",
+    "size": 120,
+    "reviews": 16000000,
+    "ratingAvg": 4.5,
+    "downloads": 1000000000,
+    "ratings": [
+      { "name": "1 star", "count": 100000 },
+      { "name": "2 star", "count": 150000 },
+      { "name": "3 star", "count": 400000 },
+      { "name": "4 star", "count": 1200000 },
+      { "name": "5 star", "count": 14300000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Google_Maps_icon_%282020%29.svg",
+    "title": "Google Maps",
+    "companyName": "Google LLC",
+    "id": 9,
+    "description": "Navigate anywhere with real-time GPS and traffic updates. Explore nearby restaurants, landmarks, and routes. Save favorite places for quick access anytime.",
+    "size": 190,
+    "reviews": 27000000,
+    "ratingAvg": 4.7,
+    "downloads": 10000000000,
+    "ratings": [
+      { "name": "1 star", "count": 200000 },
+      { "name": "2 star", "count": 300000 },
+      { "name": "3 star", "count": 700000 },
+      { "name": "4 star", "count": 2000000 },
+      { "name": "5 star", "count": 23800000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Zoom_Communications_Logo.svg",
+    "title": "Zoom",
+    "companyName": "Zoom Video Communications, Inc.",
+    "id": 10,
+    "description": "Host meetings, webinars, and video calls effortlessly. Collaborate with people anywhere in the world. Share screens and chat in real time with HD quality.",
+    "size": 130,
+    "reviews": 12000000,
+    "ratingAvg": 4.6,
+    "downloads": 1000000000,
+    "ratings": [
+      { "name": "1 star", "count": 90000 },
+      { "name": "2 star", "count": 110000 },
+      { "name": "3 star", "count": 250000 },
+      { "name": "4 star", "count": 800000 },
+      { "name": "5 star", "count": 10700000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/51/PayPal.svg",
+    "title": "PayPal",
+    "companyName": "PayPal Holdings, Inc.",
+    "id": 11,
+    "description": "Send and receive money securely around the globe. Shop online with confidence using buyer protection. Manage your finances with one trusted platform.",
+    "size": 100,
+    "reviews": 8000000,
+    "ratingAvg": 4.3,
+    "downloads": 500000000,
+    "ratings": [
+      { "name": "1 star", "count": 60000 },
+      { "name": "2 star", "count": 90000 },
+      { "name": "3 star", "count": 200000 },
+      { "name": "4 star", "count": 600000 },
+      { "name": "5 star", "count": 7050000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/6/69/Airbnb_Logo_B%C3%A9lo.svg",
+    "title": "Airbnb",
+    "companyName": "Airbnb, Inc.",
+    "id": 12,
+    "description": "Find unique stays and experiences around the world. Book homes, apartments, and adventures easily. Travel like a local and explore authentic destinations.",
+    "size": 150,
+    "reviews": 9000000,
+    "ratingAvg": 4.7,
+    "downloads": 500000000,
+    "ratings": [
+      { "name": "1 star", "count": 70000 },
+      { "name": "2 star", "count": 90000 },
+      { "name": "3 star", "count": 150000 },
+      { "name": "4 star", "count": 600000 },
+      { "name": "5 star", "count": 8150000 }
+    ]
+  }
+]
