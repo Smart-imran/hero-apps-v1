@@ -9,12 +9,12 @@ const router = createBrowserRouter([
   {
     path:"/",
     element:<MainLayout/>,
-    // errorElement:<ErrorPage></ErrorPage>,
-    // hydrateFallbackElement:<p>Loading.....</p>,
+     errorElement:<ErrorPage></ErrorPage>,
+     hydrateFallbackElement:<p>Loading.....</p>,
     children:[
         {
             index:true,
-            element:<Home></Home>
+            Component:Home
         }
     ]
   },
