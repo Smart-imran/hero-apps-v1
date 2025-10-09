@@ -33,7 +33,7 @@ const NavBar = () => {
                   <NavLink to="/"><LuHouse className="text-xl"/>Home</NavLink>
                 </li>
                 <li>
-                  <NavLink to="/"> <FaAppStore className="text-xl" />Apps</NavLink>
+                  <NavLink to="/products"> <FaAppStore className="text-xl" />Apps</NavLink>
                 </li>
                 <li>
                   <NavLink to="/"> <MdInstallDesktop className="text-xl"/>Installation</NavLink>
@@ -56,7 +56,7 @@ const NavBar = () => {
                 <NavLink to="/"><LuHouse className="text-xl"/>Home</NavLink>
               </li>
               <li>
-                <NavLink to="/"> <FaAppStore className="text-xl" />Apps</NavLink>
+                <NavLink to="/products"> <FaAppStore className="text-xl" />Apps</NavLink>
               </li>
               <li>
                 <NavLink to="/"> <MdInstallDesktop className="text-xl"/>Installation</NavLink>

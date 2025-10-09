@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { useLoaderData } from "react-router";
 import ProductCard from "../Components/ProductCard";
-import { FaAppStoreIos } from "react-icons/fa";
 import Container from "./Container";
 
 const Home = () => {
@@ -152,7 +151,7 @@ const Home = () => {
         )}
 
         {/* Product Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 px-6 pb-10">
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 px-6 pt-10">
           {visibleProducts.map((product) => (
             <ProductCard product={product} key={product.id} />
           ))}
