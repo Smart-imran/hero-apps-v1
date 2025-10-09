@@ -5,6 +5,7 @@ import ErrorPage from "../Pages/ErrorPage";
 import Home from "../Pages/Home";
 import Products from "../Pages/Products";
 import ProductDetails from "../Pages/ProductDetails";
+import Install from "../Pages/Install";
 
 const router = createBrowserRouter([
   {
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
           const data = await fetch("/appsData.json").then((res) => res.json());
           return data.find((product) => product.id.toString() === params.id);
         },
+      },
+      {
+        path: "/installed",
+        element: <Install />,
       },
     ],
   },

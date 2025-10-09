@@ -1,13 +1,31 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { useLoaderData, useNavigate } from "react-router";
 import Container from "./Container";
 import { LuDownload } from "react-icons/lu";
 import { MdReviews } from "react-icons/md";
 import { FaStar } from "react-icons/fa6";
+import { addInstalledApp, getInstalledApps } from "../utils/storage";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const ProductDetails = () => {
   const product = useLoaderData();
   const navigate = useNavigate();
+
+  const [isInstalled, setIsInstalled] = useState(false);
+
+  useEffect(() => {
+    const installed = getInstalledApps();
+    const exists = installed.find((p) => p.id === product.id);
+    if (exists) setIsInstalled(true);
+  }, [product.id]);
+
+  const handleInstall = () => {
+    addInstalledApp(product);
+    setIsInstalled(true);
+    toast.success("Installed Successfully ✅");
+    navigate("/installed");
+  };
 
   if (!product) {
     return (
@@ -20,7 +38,6 @@ const ProductDetails = () => {
   return (
     <div className="bg-[#E9E9E9] min-h-screen py-10">
       <Container>
-        {/*  Back Button */}
         <button
           className="mb-8 px-5 py-2 bg-[#632EE3] text-white rounded-lg hover:bg-[#4b1fc9] transition-all"
           onClick={() => navigate(-1)}
@@ -28,11 +45,9 @@ const ProductDetails = () => {
           ← Back
         </button>
 
-        {/* 🌟 Main Content (Image Left, Details Right) */}
         <div className="flex flex-col md:flex-row items-center md:items-start gap-10">
-        
           <div className="md:w-1/2 flex justify-center">
-            <div className="w-full max-w-sm rounded-2xl  shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300">
+            <div className="w-full max-w-sm rounded-2xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300">
               <img
                 src={product.image}
                 alt={product.title}
@@ -41,7 +56,6 @@ const ProductDetails = () => {
             </div>
           </div>
 
-          
           <div className="md:w-1/2 space-y-4">
             <h2 className="text-3xl font-bold text-gray-800">
               {product.title}{" "}
@@ -57,16 +71,13 @@ const ProductDetails = () => {
               </span>
             </p>
 
-            {/*  Full Width Line */}
             <hr className="border-purple-500 border-2 w-full my-4" />
 
-            {/* 📊 Stats Section */}
             <div className="flex justify-between text-center">
               <div>
                 <div className="text-sm text-gray-600">Downloads</div>
                 <div className="font-extrabold text-4xl flex items-center gap-2">
-                  {product.downloads}{" "}
-                  <LuDownload style={{ color: "#632EE3" }} />
+                  {product.downloads} <LuDownload style={{ color: "#632EE3" }} />
                 </div>
               </div>
 
@@ -85,6 +96,18 @@ const ProductDetails = () => {
                 </div>
               </div>
             </div>
+
+            <button
+              onClick={handleInstall}
+              disabled={isInstalled}
+              className={`px-6 py-3 rounded-lg text-xl font-medium text-white transition-all ${
+                isInstalled
+                  ? "bg-gray-400 cursor-not-allowed"
+                  : "bg-[#632EE3] hover:bg-[#4b1fc9]"
+              }`}
+            >
+              {isInstalled ? "Installed" : "Install Now"}
+            </button>
           </div>
         </div>
       </Container>

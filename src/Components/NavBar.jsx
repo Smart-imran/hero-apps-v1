@@ -36,7 +36,7 @@ const NavBar = () => {
                   <NavLink to="/products"> <FaAppStore className="text-xl" />Apps</NavLink>
                 </li>
                 <li>
-                  <NavLink to="/"> <MdInstallDesktop className="text-xl"/>Installation</NavLink>
+                  <NavLink to="/installed"> <MdInstallDesktop className="text-xl"/>Installation</NavLink>
                 </li>
               </ul>
             </div>
@@ -60,7 +60,7 @@ const NavBar = () => {
                 <NavLink to="/products"> <FaAppStore className="text-xl" />Apps</NavLink>
               </li>
               <li>
-                <NavLink to="/"> <MdInstallDesktop className="text-xl"/>Installation</NavLink>
+                <NavLink to="/installed"> <MdInstallDesktop className="text-xl"/>Installation</NavLink>
               </li>
             </ul>
           </div>
