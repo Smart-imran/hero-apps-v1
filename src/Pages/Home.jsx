@@ -1,32 +1,24 @@
-import React, { useState } from "react";
-import { useLoaderData } from "react-router";
+import React from "react";
+import { useLoaderData, useNavigate } from "react-router";
 import ProductCard from "../Components/ProductCard";
 import Container from "./Container";
 
 const Home = () => {
   const products = useLoaderData();
+  const navigate = useNavigate();
 
-  const [showAll, setShowAll] = useState(false);
-
-  const [searchText, setSearchText] = useState("");
-
-  const filteredProducts = products.filter((product) =>
-    product.title.toLowerCase().includes(searchText.toLowerCase())
-  );
-
-  const visibleProducts = showAll
-    ? filteredProducts
-    : filteredProducts.slice(0, 8);
+   
+  const visibleProducts = products.slice(0, 8);
 
   return (
-    <div className="bg-[#F5F5F5] min-h-screen">
-      {/* Header Section */}
-      <div>
-        <h2 className="text-7xl text-center font-bold pt-10">
+    <div className="bg-[#E9E9E9] min-h-screen">
+      {/*  Header Section */}
+      <div className="text-center py-16">
+        <h2 className="text-7xl font-bold leading-tight">
           We Build <br /> <span className="text-[#632EE3]">Productive </span>
           Apps
         </h2>
-        <p className="text-center text-[#627382] mt-4">
+        <p className="text-[#627382] mt-4 max-w-2xl mx-auto">
           At HERO.IO, we craft innovative apps designed to make everyday life
           simpler, smarter, and more exciting.
           <br />
@@ -34,15 +26,16 @@ const Home = () => {
           make an impact.
         </p>
 
-        {/* Store Buttons */}
-        <div className="flex justify-center gap-4 mt-6 pb-10">
+        {/* ✅ Store Buttons */}
+        <div className="flex justify-center gap-4 mt-6">
           <a
             href="https://play.google.com/store/games"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 font-bold text-xl bg-white text-black px-4 py-2 rounded-lg hover:bg-gray-200 transition"
           >
-            <img src="/public/google-play.png" alt="" /> Google Play
+            <img src="/public/google-play.png" alt="" />
+            Google Play
           </a>
 
           <a
@@ -51,23 +44,27 @@ const Home = () => {
             rel="noopener noreferrer"
             className="flex items-center gap-2 font-bold text-xl bg-white text-black px-6 py-2 rounded-lg hover:bg-gray-200 transition"
           >
-            <img src="/public/app-store.png" alt="" /> App Store
+            <img src="/public/app-store.png" alt="" />
+            App Store
           </a>
         </div>
       </div>
 
-      {/* Hero Section */}
+      {/*  Hero Image */}
       <div className="flex justify-center items-center">
-        <img src="/public/hero.png" alt="" />
+        <img src="/public/hero.png" alt="Hero" />
       </div>
 
-      <div className="pt-10 flex flex-col justify-center items-center bg-gradient-to-r from-[#632EE3] to-[#9F62F2]">
-        <h2 className="text-white font-bold text-4xl text-center">
+      {/*  Product Section */}
+      <div className="pt-10 flex flex-col justify-center items-center bg-gradient-to-l from-[#9F62F2] to-[#632EE3] text-white">
+        {/*  Title */}
+        <h2 className="font-bold text-4xl text-center">
           Trusted by Millions, Built for You
         </h2>
 
-        <div className="stats stats-vertical lg:stats-horizontal text-white py-10">
-          {/* Total Downloads */}
+        {/*  Stats Section */}
+        <div className="stats stats-vertical lg:stats-horizontal py-10 text-white">
+          
           <div className="stat space-y-3">
             <div className="stat-figure">
               <svg
@@ -83,11 +80,11 @@ const Home = () => {
               </svg>
             </div>
             <div>Total Downloads</div>
-            <div className="stat-value text-5xl">29.6M</div>
+            <div className="stat-value text-5xl text-white">29.6M</div>
             <div className="stat-desc text-white">21% more than last month</div>
           </div>
 
-          {/* Total Reviews */}
+          
           <div className="stat space-y-3">
             <div className="stat-figure">
               <svg
@@ -107,7 +104,7 @@ const Home = () => {
             <div className="stat-desc text-white">46% more than last month</div>
           </div>
 
-          {/* Active Apps */}
+          
           <div className="stat space-y-3">
             <div className="stat-figure">
               <svg
@@ -128,40 +125,24 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <br />
 
       <Container>
-        {/* ✅ Search Section  */}
-        {showAll && (
-          <div className="flex items-center justify-between px-6 mb-8">
-            {/* Left side  */}
-            <p className="text-gray-700 font-medium">
-              ({filteredProducts.length}) Apps Found
-            </p>
+        <h2 className="text-4xl font-bold text-center pt-16 pb-10">
+          Our Featured Apps
+        </h2>
 
-            {/* Right side  */}
-            <input
-              type="text"
-              placeholder="Search apps..."
-              value={searchText}
-              onChange={(e) => setSearchText(e.target.value)}
-              className="border border-gray-300 rounded-lg px-2 py-2 focus:outline-none focus:ring-2 focus:ring-[#632EE3]"
-            />
-          </div>
-        )}
-
-        {/* Product Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 px-6 pt-10">
+        {/*  Product Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 px-6 pb-10">
           {visibleProducts.map((product) => (
             <ProductCard product={product} key={product.id} />
           ))}
         </div>
 
         {/*  See All Button */}
-        {!showAll && filteredProducts.length > 8 && (
+        {products.length > 8 && (
           <div className="flex justify-center pb-10">
             <button
-              onClick={() => setShowAll(true)}
+              onClick={() => navigate("/products")}
               className="bg-[#632EE3] text-white px-6 py-2 rounded-lg hover:bg-[#4b22b5] transition"
             >
               See All

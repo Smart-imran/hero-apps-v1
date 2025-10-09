@@ -43,16 +43,17 @@ const NavBar = () => {
             <a className="cursor-pointer">
               <img className="w-12 h-12" src={logo} alt="Logo" />
             </a>
+            <NavLink to="/">
             <span className="uppercase font-bold text-xl ml-2 text-[#632EE3] cursor-pointer">
               Hero.Io
             </span>
+            </NavLink>
           </div>
 
           {/* Center */}
           <div className="navbar-center hidden lg:flex">
             <ul className="menu menu-horizontal px-1">
               <li>
-
                 <NavLink to="/"><LuHouse className="text-xl"/>Home</NavLink>
               </li>
               <li>
