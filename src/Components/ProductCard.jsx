@@ -7,10 +7,10 @@ const ProductCard = ({ product }) => {
   const { title, image, downloads, ratingAvg } = product;
 
   return (
-<Container>
-    <div className="bg-white w-64 rounded-2xl shadow-lg p-4 cursor-pointer">
+
+    <div className="bg-white w-64  rounded-2xl shadow-lg p-4 cursor-pointer">
       {/* Image (Stable) */}
-      
+      <Container>
       <div className="overflow-hidden rounded-2xl">
         <img src={image} alt={title} className="w-max h-60 object-cover py-8 mx-6" />
       </div>
@@ -34,9 +34,10 @@ const ProductCard = ({ product }) => {
           {ratingAvg}
         </div>
       </div>
+      </Container>
      
     </div>
-     </Container>
+     
   );
 };
 
