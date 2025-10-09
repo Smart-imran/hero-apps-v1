@@ -22,9 +22,8 @@ const ProductCard = ({ product }) => {
         {title}: {companyName}
       </h2>
 
-      {/* Bottom icons */}
-      <div className="flex justify-between items-center mt-3 px-1">
-        {/* Downloads */}
+     
+      <div className="flex justify-between items-center mt-3 px-1">        
         <div className="flex items-center gap-1 bg-green-100 text-green-600 px-2 py-1 rounded-full text-xs font-medium">
           <FiDownload className="text-green-600" />
           {downloads}
